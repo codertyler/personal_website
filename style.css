@@ -1,0 +1,185 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background-color: black;
+
+}
+
+.menu ul li {
+  float: right;
+  padding: 0 30px 0 20px;
+  text-align: center;
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-family: 'ZCOOL XiaoWei', serif;
+  display: inline-block;
+  position: relative;
+
+}
+
+.menu a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 50%;
+  position: relative;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.menu a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+
+.main {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: white;
+  height: 45em;
+  background-image: linear-gradient(to left, #000080, black );
+
+}
+
+.main-text {
+  padding-top: 17em;
+}
+
+h1 {
+  font-family: 'ZCOOL XiaoWei', serif;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'ZCOOL XiaoWei', serif;
+  padding: 0;
+  margin: 0;
+
+}
+
+
+.works {
+  height: 40em;
+  background-color: #151567;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thombstones {
+  display: grid;
+  text-align: center;
+  grid-auto-flow: column;
+  justify-content: center;
+  grid-gap: 25px;
+  font-family: 'ZCOOL XiaoWei', serif;
+
+}
+
+.calculator, .cvscan, .grocery_list {
+  border: solid 1px white;
+  height: 15em;
+  width: 13em;
+}
+
+.contact {
+  height: 100px;
+  background-color: white;
+  font-family: 'ZCOOL XiaoWei', serif;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 50px;
+}
+
+.github a, img {
+  display: grid;
+  grid-auto-flow: column;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  grid-gap: 10px;
+
+}
+
+.email a, img {
+  display: grid;
+  grid-auto-flow: column;
+  vertical-align: middle;
+  text-decoration: none;
+  color: black;
+  grid-gap: 10px;
+
+}
+
+footer {
+  height: 50px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: 'ZCOOL XiaoWei', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  font-family: 'ZCOOL XiaoWei', serif;
+  font-size: 1.5em;
+  height: 30em;
+  display: flex;
+  margin-top: 5em;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.about h2 {
+  color: grey;
+}
+
+.economist, .analyst {
+  color: grey;
+}
+
+.tools_icons {
+  display: grid;
+  grid-auto-flow: column;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+  grid-column-gap: 50px;
+}
+
+.tools_icons img {
+  height: 100px;
+}
+
+.software {
+  font-size: 2em;
+}
