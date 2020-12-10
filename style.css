@@ -3,6 +3,8 @@ body, html {
   padding: 0;
 }
 
+
+
 .menu {
   position: fixed;
   top: 0;
@@ -49,18 +51,31 @@ body, html {
 
 
 .main {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  justify-content: center;
   width: 100%;
   margin: 0;
   padding: 0;
   color: white;
-  height: 45em;
-  background-image: linear-gradient(to left, #000080, black );
-
+  height: 100%;
+  background-color:#87ceeb;
 }
 
+.main img {
+  max-width: 80%;
+}
+
+
 .main-text {
-  padding-top: 17em;
+  
+  border: white 1px solid;
+}
+
+.main img {
+  border: white 1px solid;
+
 }
 
 h1 {
