@@ -1,99 +1,53 @@
 body, html {
-  margin: 0;
   padding: 0;
-}
-
-
-
-.menu {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 50px;
-  text-align: center;
-  background-color: black;
-
-}
-
-.menu ul li {
-  float: right;
-  padding: 0 30px 0 20px;
-  text-align: center;
-  list-style: none;
-}
-
-.menu a {
-  text-decoration: none;
-  color: white;
-  font-family: 'ZCOOL XiaoWei', serif;
-  display: inline-block;
-  position: relative;
-
-}
-
-.menu a:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 3px;
-  left: 50%;
-  position: relative;
-  background: #fff;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-
-.menu a:hover:after {
-  width: 100%;
-  left: 0;
+  margin: 0;
+  height: 100%;
 }
 
 
 .main {
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
   width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
   color: white;
-  height: 100%;
   background-color:#87ceeb;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
 }
 
-.main img {
-  max-width: 80%;
-}
-
-
-.main-text {
-  
-  border: white 1px solid;
-}
-
-.main img {
-  border: white 1px solid;
-
-}
-
-h1 {
-  font-family: 'ZCOOL XiaoWei', serif;
-  padding: 0;
+.main_image {
   margin: 0;
+  padding: 1em 1em 1em 1em;  
+  height: 100%;
+  width: 100%;
+  padding-top: 26em;
 }
 
-h2 {
-  font-family: 'ZCOOL XiaoWei', serif;
-  padding: 0;
-  margin: 0;
+.main_image img {
+  height: 80%;
+  width: 80%;
 
+}
+
+
+.main-text h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(39, 36, 36);
+  text-align: left;
+  font-size: 5vw;
+  margin: 0;
+  padding-left: 0.5em;
+  border: 1px white solid;
+  width: 100%;
+  height: 100%;
 }
 
 
 .works {
-  height: 40em;
+  height: 100%;
   background-color: #151567;
   text-align: center;
   display: flex;
@@ -101,15 +55,7 @@ h2 {
   align-items: center;
 }
 
-.thombstones {
-  display: grid;
-  text-align: center;
-  grid-auto-flow: column;
-  justify-content: center;
-  grid-gap: 25px;
-  font-family: 'ZCOOL XiaoWei', serif;
 
-}
 
 .calculator, .cvscan, .grocery_list {
   border: solid 1px white;
@@ -128,7 +74,7 @@ h2 {
   grid-gap: 50px;
 }
 
-.github a, img {
+.github a {
   display: grid;
   grid-auto-flow: column;
   vertical-align: middle;
@@ -140,7 +86,7 @@ h2 {
 
 }
 
-.email a, img {
+.email a {
   display: grid;
   grid-auto-flow: column;
   vertical-align: middle;
@@ -166,11 +112,11 @@ footer {
 .about {
   font-family: 'ZCOOL XiaoWei', serif;
   font-size: 1.5em;
-  height: 30em;
+  height: 100%;
   display: flex;
-  margin-top: 5em;
   justify-content: center;
   text-align: center;
+
 
 }
 
@@ -193,6 +139,7 @@ footer {
 
 .tools_icons img {
   height: 100px;
+  max-width: 100%;
 }
 
 .software {
