@@ -11,7 +11,6 @@
 </head>
 
  <body>
-  <div class="scroll_container">
   <div class="main">
     <div class="main-text">
       <div>
@@ -20,16 +19,41 @@
       </div>
       <div class="nav_buttons">
         <div class="nav_projects">
-          <img src="./assets/gear.png" alt="gear"> 
-          <p>Projects</p>
+          <a href="#works"><img src="./assets/gear.png" alt="gear">          <p>Projects</p>
+            </a> 
         </div>
           <div class="nav_about_me">
-            <img src="./assets/profile.png" alt="profile">
-            <p>About me</p>
+            <a href="#about">
+              <img src="./assets/profile.png" alt="profile">
+              <p>About me</p>
+
+            </a>
+            
+            
           </div>
-          <div class="nav_contact">
-            <img src="./assets/contact.png" alt="contact">
-            <p>Contact</p>
+          <div id="nav_contact" class="nav_contact">
+            <div>
+
+              <img id="contact_button" src="./assets/contact.png" alt="contact">
+              <p>Contact</p>
+              <div id="drop_down" class="drop_down">
+
+              <a href="https://github.com/codertyler" target="_blank">
+             <img src="./assets/github.png" alt="github">
+             <p>Github</p>
+            </a>
+             <div>
+
+              <a href="mailto: me@tylerasai.com" target="_blank">
+               <img src="./assets/email.png" alt="email">
+               <p>E-mail</p>
+              </a>
+             </div>
+
+           </div> 
+            </div>
+           
+          
           </div>
       </div>
     </div>
@@ -96,26 +120,48 @@
   </div>
 
 
-  <div class="works">
-    <div class="thombstones">
-      <div class="calculator">CCA Calculator</div>
-      <div class="cvscan">CV Scan</div>
-      <div class="grocery_list">Grocery List</div>
+  <div class="works" id="works">
+    <h2>Selection of projects</h2>
+    <div class="thumbnail top_thumbnail">
+      <div class="box">
+        <h3>ResumeX</h3>
+          <a href="https://resumex2020.herokuapp.com" target="_blank"><img src="./assets/resumex.png" alt="resumex"></a> 
+          <p>Resume Scanning Web App</p>
+
+        </div>
+      <div class="box">
+        <h3>ByeLoser! Timer</h3>
+        <a href="https://byeloser.lol/" target="_blank"><img src="./assets/byeloser.png" alt="byeloser"></a> 
+        <p>Political office ejection timer</p>
+      </div>
+      <div class="box">
+        <h3>Takeout Order App</h3>
+        <a href="https://github.com/codertyler/LHL-midterm-TZ_project_10" target="_blank"><img src="./assets/stinkingrose.png" alt="stinking"></a> 
+        <p>A Single Restaurant Takeout Order App</p>
+      </div>
     </div>
+    <div class="thumbnail">
+      <div class="box">
+        <h3>Scheduler Web App</h3>
+        <a href="https://github.com/codertyler/scheduler" target="_blank"><img src="./assets/scheduler.png" alt="scheduler"></a> 
+        <p>A Single Page App built on React JS</p>
+      </div>
+      <div class="box">
+        <h3>E-Store App</h3>
+        <a href="https://github.com/codertyler/jungle-rails" target="_blank"><img src="./assets/jungle.png" alt="jungle"></a> 
+        <p>E-Commerce Website built on Ruby on Rails</p>
+      </div>
+      <div class="box">
+        <h3>URL Shortener</h3>
+        <a href="https://github.com/codertyler/tinyapp" target="_blank"><img src="./assets/tinyapp.png" alt="tinyapp"></a> 
+        <p>URL Shortener App</p>
+      </div>
+    </div>
+    
 
   </div>
 
-  <div class="contact" id="contact">
-    <div class="github">
-      <a href="https://github.com/codertyler" add target="_blank"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github" width="20px" height="auto">Github</a>
-    </div>
-
-    <div class="email">
-      <a href="mailto:me@tylerasai.com?subject=feedback"><img src="assets/email.png" alt="email" width="20px">Email</a>
-    </div>
-
-  </div>
-</div> 
+  
  </body>
     
   
@@ -123,9 +169,10 @@
   
   
   <footer>
-    All rights reserved © Designed and coded by Tyler
+    All rights reserved © Designed and coded by Tyler.
   </footer>
 
+  <script src="./scripts/main.js"></script>
 
 </html>
 
