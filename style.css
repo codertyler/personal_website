@@ -1,63 +1,110 @@
-body, html {
+body,
+html {
   padding: 0;
   margin: 0;
   height: 100%;
 }
 
+.scroll_container {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.nav_buttons {
+  width: 350px;
+  justify-content: space-between;
+  display: flex;
+  margin-right: 100px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav_buttons img {
+  height: 70px;
+  transition: all 0.07s ease-in-out;
+  filter: grayscale(100%);
+  color: transparent;
+}
+
+.nav_buttons img:hover {
+  /* height: 100px; */
+  transform: scale(1.2);
+  filter: none;
+}
+
+.nav_projects img:hover {
+  transform: rotate(50deg);
+  filter: hue-rotate(240deg);
+}
+
+
+
+.nav_buttons p {
+  color: transparent;
+}
+
+.nav_buttons img:hover ~ p {
+  color: white;
+}
 
 .main {
   display: flex;
-  width: 100%;
-  height: 100%;
+  height: 100vh;
   margin: 0;
   padding: 0;
   color: white;
-  background-color:#87ceeb;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-evenly;
+  background-color: #87ceeb;
+  flex-direction: column;
+  justify-content: space-between;
+  scroll-snap-align: center;
+
 }
 
 .main_image {
-  margin: 0;
-  padding: 1em 1em 1em 1em;  
-  height: 100%;
-  width: 100%;
-  padding-top: 26em;
+  width: 140vh;
+  align-self: center;
+  margin-top: -30vh;
 }
 
 .main_image img {
-  height: 80%;
-  width: 80%;
-
+  object-fit: contain;
+  width: 100%;
 }
 
+.main-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .main-text h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: rgb(39, 36, 36);
   text-align: left;
+  margin-left: 4.5vh;
   font-size: 5vw;
-  margin: 0;
-  padding-left: 0.5em;
-  border: 1px white solid;
   width: 100%;
   height: 100%;
+  z-index: 3;
 }
-
 
 .works {
-  height: 100%;
-  background-color: #151567;
-  text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: #87ceeb;
+  flex-direction: column;
+  justify-content: space-between;
+  scroll-snap-align: center;
+
 }
 
-
-
-.calculator, .cvscan, .grocery_list {
+.calculator,
+.cvscan,
+.grocery_list {
   border: solid 1px white;
   height: 15em;
   width: 13em;
@@ -66,7 +113,7 @@ body, html {
 .contact {
   height: 100px;
   background-color: white;
-  font-family: 'ZCOOL XiaoWei', serif;
+  font-family: "ZCOOL XiaoWei", serif;
   display: grid;
   grid-auto-flow: column;
   justify-content: center;
@@ -83,7 +130,6 @@ body, html {
   text-decoration: none;
   color: black;
   grid-gap: 10px;
-
 }
 
 .email a {
@@ -93,7 +139,6 @@ body, html {
   text-decoration: none;
   color: black;
   grid-gap: 10px;
-
 }
 
 footer {
@@ -103,45 +148,88 @@ footer {
   color: white;
   margin: 0;
   padding: 0;
-  font-family: 'ZCOOL XiaoWei', serif;
+  font-family: "ZCOOL XiaoWei", serif;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .about {
-  font-family: 'ZCOOL XiaoWei', serif;
-  font-size: 1.5em;
-  height: 100%;
   display: flex;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: #87ceeb;
+  flex-direction: column;
   justify-content: center;
+  scroll-snap-align: center;
+
+}
+
+
+
+.about-text {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.about
+h2 {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 3vw;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 3vw;
+  }
+
+.economist {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3em;
+  padding: 0;
+  margin: 0;
+}
+
+.analyst {
+  color: rgb(165, 157, 157);
+  font-family: "Montserrat", sans-serif;
+  font-size: 3em;
+  padding: 0;
+  margin: 0;
   text-align: center;
 
-
-}
-
-.about h2 {
-  color: grey;
-}
-
-.economist, .analyst {
-  color: grey;
-}
-
-.tools_icons {
-  display: grid;
-  grid-auto-flow: column;
-  margin-top: 40px;
-  align-items: center;
-  justify-content: center;
-  grid-column-gap: 50px;
-}
-
-.tools_icons img {
-  height: 100px;
-  max-width: 100%;
 }
 
 .software {
-  font-size: 2em;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 5em;
+  padding: 0;
+  margin: 0;
+}
+
+.software span {
+  color: black;
+}
+
+.software .heart {
+  color: rgb(216, 96, 96);
+}
+
+.about table {
+  width: 80vh;
+  color: rgb(39, 36, 36);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  align-self: center;
+  margin-left: 5em;
+}
+.about th {
+  text-align: left;
+  color:white;
 }
