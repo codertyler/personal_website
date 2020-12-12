@@ -4,14 +4,12 @@ html {
   margin: 0;
   height: 100%;
   scroll-behavior: smooth;
-
+  overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
 }
-
-
 
 .nav_contact {
   display: flex;
@@ -23,7 +21,11 @@ a {
   flex-direction: column;
 }
 
-
+#up_arrow {
+  height: 50px;
+  align-self: center;
+  margin-top: 0.5em;
+}
 
 .nav_buttons {
   width: 350px;
@@ -34,7 +36,6 @@ a {
   position: fixed;
   right: 5em;
   top: 3em;
-
 }
 
 .nav_buttons img {
@@ -42,10 +43,6 @@ a {
   transition: all 0.07s ease-in-out;
   filter: grayscale(100%);
   color: transparent;
-}
-
-.drop_down img {
-  height: 40px;
 }
 
 .nav_buttons img:hover {
@@ -59,8 +56,6 @@ a {
   filter: hue-rotate(240deg);
 }
 
-
-
 .nav_buttons p {
   color: transparent;
 }
@@ -71,7 +66,7 @@ a {
 
 .main {
   display: flex;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -79,18 +74,16 @@ a {
   background-color: #87ceeb;
   flex-direction: column;
   justify-content: space-between;
-
 }
 
 .main_image {
-  width: 90em;
-  align-self: center;
-  margin-top: -30vh;
+  display: flex;
+  justify-content: center;
+  margin-top: -100em;
 }
 
 .main_image img {
-  object-fit: contain;
-  width: 100%;
+  width: 80em;
 }
 
 .main-text {
@@ -104,28 +97,24 @@ a {
   font-family: "Montserrat", sans-serif;
   color: rgb(39, 36, 36);
   text-align: left;
-  margin-left: 4.5vh;
-  margin-top: 2vh;
-  font-size: 5vw;
-  width: 100%;
-  height: 100%;
-  z-index: 3;
+  margin-left: 0.5em;
+  margin-top: 0.3em;
+  font-size: 6em;
 }
 
 .works {
   display: flex;
-  height: 100vh;
+  height: 100%;
   margin: 0;
   padding: 0;
   color: white;
-  background-color:#6E9CD4;
+  background-color: #6e9cd4;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-
 }
 
-.works h2{
+.works h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 5vh;
   padding: 0;
@@ -136,7 +125,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 120vh;
+  width: 80em;
   margin-top: -10em;
 }
 
@@ -151,16 +140,14 @@ a {
   height: 180px;
   width: 320px;
   transition: all 0.07s ease-in-out;
-
 }
 
 .box img:hover {
   transform: scale(1.05);
-
 }
 
 .box h3 {
-  margin-top: -42px; 
+  margin-top: -42px;
   text-align: center;
 }
 
@@ -168,12 +155,9 @@ a {
   text-align: center;
 }
 
-
-
-
 footer {
   height: 50px;
-  background-color: #8096F6;
+  background-color: #8096f6;
   text-align: center;
   color: black;
   margin: 0;
@@ -186,17 +170,14 @@ footer {
 
 .about {
   display: flex;
-  height: 100vh;
+  height: 100%;
   margin: 0;
   padding: 0;
   color: white;
   background-color: #87ceeb;
   flex-direction: column;
   justify-content: center;
-
 }
-
-
 
 .about-text {
   align-self: center;
@@ -204,8 +185,7 @@ footer {
   flex-direction: column;
 }
 
-.about
-h2 {
+.about h2 {
   font-family: "Montserrat", sans-serif;
   color: rgb(255, 255, 255);
   font-size: 3vw;
@@ -214,7 +194,7 @@ h2 {
   height: 100%;
   text-align: center;
   margin: 3vw;
-  }
+}
 
 .economist {
   color: white;
@@ -225,13 +205,12 @@ h2 {
 }
 
 .analyst {
-  color: rgb(165, 157, 157);
+  color: rgb(255, 255, 255);
   font-family: "Montserrat", sans-serif;
   font-size: 3em;
   padding: 0;
   margin: 0;
   text-align: center;
-
 }
 
 .software {
@@ -247,11 +226,11 @@ h2 {
 }
 
 .software .heart {
-  color: rgb(216, 96, 96);
+  color: rgb(196, 110, 110);
 }
 
 .about table {
-  width: 80vh;
+  width: 800px;
   color: rgb(39, 36, 36);
   font-family: "Montserrat", sans-serif;
   font-size: 1.5em;
@@ -260,5 +239,159 @@ h2 {
 }
 .about th {
   text-align: left;
-  color:white;
+  color: white;
+}
+
+@media screen and (max-width: 766px) {
+  .nav_buttons {
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-left: -23em;
+  }
+
+  #up_arrow {
+    height: 50px;
+    align-self: center;
+    position: fixed;
+    top: 90%;
+    right: 30px;
+
+  }
+
+  .drop_down {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main_image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main_image img {
+    height: 400px;
+    width: auto;
+  }
+
+  .main-text h1 {
+    font-family: "Montserrat", sans-serif;
+    color: rgb(39, 36, 36);
+    text-align: left;
+    margin-left: 0.6em;
+    margin-top: 5em;
+    font-size: 3em;
+    width: 500px;
+  }
+
+  .main {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #87ceeb;
+    flex-direction: column;
+  }
+  
+  .about {
+    display: flex;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #87ceeb;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .about-text {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.4em;
+    margin: 1em;
+    margin-left: 5em;
+    text-align: left;
+  }
+
+  .about h2 {
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 4em;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 3vw;
+  }
+
+  .software {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 5em;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .software span {
+    color: black;
+  }
+  
+  .software .heart {
+    color: rgb(196, 110, 110);
+  }
+
+  .analyst {
+    text-align: left;
+  }
+
+  .about table {
+    width: 100%;
+    font-size: 1em;
+    margin-left: 2em;
+  }
+
+  .works {
+    display: flex;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #6e9cd4;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    padding-top: 20px;
+
+   
+
+
+  }
+  
+  .works h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  .thumbnail, .top_thumbnail {
+    display: flex;
+    flex-direction: column;
+    width: 78%;
+    margin: 5em;
+    height: 50em;
+
+  }
+
+  
+  
 }
