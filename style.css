@@ -392,6 +392,12 @@ footer {
 
   }
 
+  body, html {
+    -webkit-overflow-scrolling: touch;
+
+
+  }
+
   
   
 }
