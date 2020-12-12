@@ -398,6 +398,21 @@ footer {
 
   }
 
+  .nav_buttons img {
+    height: 70px;
+    transition: all 0.07s ease-in-out;
+    filter: grayscale(0%);
+    color: transparent;
+  }
+
+  .box h3 {
+    border-left: 1px solid rgb(202, 193, 193);
+  }
+
+  .box p{
+    border-bottom: 1px solid rgb(202, 193, 193);
+  }
+
   
   
 }
