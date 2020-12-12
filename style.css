@@ -79,7 +79,7 @@ a {
 .main_image {
   display: flex;
   justify-content: center;
-  margin-top: -100em;
+  margin-top: -200px;
 }
 
 .main_image img {
