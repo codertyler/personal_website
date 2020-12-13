@@ -296,7 +296,7 @@ footer {
     color: rgb(39, 36, 36);
     text-align: left;
     margin-left: 0.6em;
-    margin-top: 5em;
+    margin-top: 3em;
     font-size: 3em;
     width: 500px;
   }
@@ -310,7 +310,9 @@ footer {
     color: white;
     background-color: #87ceeb;
     flex-direction: column;
-    background-size: 30em;
+    background-size: 60em;
+    background-position: center;
+    
 
   }
   
