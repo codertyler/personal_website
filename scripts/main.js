@@ -1,12 +1,22 @@
-const contact = document.getElementById("contact_button");
-const nav_contact = document.getElementById("nav_contact");
+$(document).ready(function () {
+  $(".drop_down").css('visibility', 'hidden');
 
-contact.addEventListener("mouseover", () => {
-  document.getElementById("drop_down").style.visibility = "visible";
+  $("#contact_button").mouseleave(() =>{
+    $(".drop_down").css('visibility', 'hidden');
+    $(".drop_down").mouseleave(()=>{
+      $(".drop_down").css('visibility', 'hidden');
 
-  nav_contact.addEventListener("mouseleave", () => {
-    document.getElementById("drop_down").style.visibility = "hidden";
-  });
+    })
+  })
+
+
+  $("#contact_button").mouseover(() =>{
+    $(".drop_down").mouseover(()=>{
+      $(".drop_down").css('visibility', 'visible');
+
+    })
+    $(".drop_down").css('visibility', 'visible');
+
+  })
+
 });
-
-document.getElementById("drop_down").style.visibility = "hidden";

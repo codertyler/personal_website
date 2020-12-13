@@ -9,22 +9,31 @@ html {
 
 a {
   text-decoration: none;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid black; */
+  height: 100%;
 }
 
 .nav_contact {
   display: flex;
   flex-direction: row;
+  margin: 0;
+  padding: 0;
 }
 
 .drop_down {
   display: flex;
   flex-direction: column;
+
 }
 
 #up_arrow {
   height: 50px;
-  align-self: center;
-  margin-top: 0.5em;
+  position: fixed;
+  right: 5%;
+  top: 90%;
+
 }
 
 .nav_buttons {
@@ -74,17 +83,13 @@ a {
   background-color: #87ceeb;
   flex-direction: column;
   justify-content: space-between;
+  background-image: url(./assets/mountain.png);
+  background-size: 80em;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.main_image {
-  display: flex;
-  justify-content: center;
-  margin-top: -200px;
-}
 
-.main_image img {
-  width: 80em;
-}
 
 .main-text {
   display: flex;
@@ -97,9 +102,10 @@ a {
   font-family: "Montserrat", sans-serif;
   color: rgb(39, 36, 36);
   text-align: left;
-  margin-left: 0.5em;
-  margin-top: 0.3em;
+  margin-left: 1.5em;
+  margin-top: 1.5em;
   font-size: 6em;
+  width: 50px;
 }
 
 .works {
@@ -126,17 +132,11 @@ a {
   flex-direction: row;
   justify-content: space-between;
   width: 80em;
-  margin-top: -10em;
-}
-
-.top_thumbnail {
-  margin-top: -10em;
 }
 
 .box {
   display: flex;
   flex-direction: column;
-  font-family: "Montserrat", sans-serif;
   height: 180px;
   width: 320px;
   transition: all 0.07s ease-in-out;
@@ -147,11 +147,15 @@ a {
 }
 
 .box h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
   margin-top: -42px;
   text-align: center;
 }
 
 .box p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
   text-align: center;
 }
 
@@ -306,6 +310,8 @@ footer {
     color: white;
     background-color: #87ceeb;
     flex-direction: column;
+    background-size: 30em;
+
   }
   
   .about {
@@ -414,7 +420,10 @@ footer {
     color: transparent;
   }
 
-  
+  .box p {
+    text-align: center;
+    font-weight: 100;
+  }
  
   
 }
