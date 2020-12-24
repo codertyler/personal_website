@@ -84,7 +84,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   background-image: url(./assets/mountain.png);
-  background-size: 80em;
+  background-size: 70em;
   background-repeat: no-repeat;
   background-position: center;
 }
