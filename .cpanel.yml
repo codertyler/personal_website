@@ -4,3 +4,5 @@ deployment:
     - export DEPLOYPATH=/home/user/public_html/tylerasai
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp style.css $DEPLOYPATH
+    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp -R scripts $DEPLOYPATH
